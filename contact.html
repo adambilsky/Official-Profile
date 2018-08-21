@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en-us">
-
+<!-- Contact Page-->
 <head>
     <meta charset="UTF-8">
-    <title>Home | Adam Bilsky</title>
+    <title>Contact | Adam Bilsky</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -21,7 +21,7 @@
 <body>
     <!-- navbar section -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Portfolio</a>
+        <a class="navbar-brand" href="#">Contact</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="/Users/adambilsky/FullstackCourse/WorkingFolder/Official-Profile/index.html">Home
+                    <a class="nav-link" href="#">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
@@ -39,7 +39,7 @@
                         aria-expanded="false">
                         Navigate</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Portfolio</a>
+                        <a class="dropdown-item" href="/Users/adambilsky/FullstackCourse/WorkingFolder/Official-Profile/index.html">Portfolio</a>
                         <a class="dropdown-item" href="#">About Me</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="/Users/adambilsky/FullstackCourse/WorkingFolder/Official-Profile/contact.html">Contact</a>
@@ -52,17 +52,20 @@
             </form>
         </div>
     </nav>
-
-    <!-- main section  
-    The main section is the portfolio, which displays 3 columns of screenshots and links.
-    - Projects are displayed in order of deployment, with the most recent first.
-    - Project information is stored in and retrieved from an object array, 
-        so additional projects will be added to the display dynamically with JS and jQuery. 
-    -->
-<div class="container" id="displayDiv">
-    <div class="row">
-    </div>
-</div>
-    <!-- End of body -->
-    <script src="assets/javascript/profile.js"></script>
-</body>
+    <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Thanks for your feedback!" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
